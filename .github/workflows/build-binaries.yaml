@@ -37,7 +37,7 @@ jobs:
           ${{ runner.os }}-
     - name: Install system dependencies
       run: |
-        apt install libc6-dev-i386
+        sudo apt install libc6-dev-i386
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
